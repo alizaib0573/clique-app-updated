@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-mono: var(--local-font-rubik);
+  --font-sans: var(--local-font-rifton-norm);
+}
+
+html,
+body {
+  overscroll-behavior: none;
+}
+
+
+/* Mobile responsive adjustments */
+@media (max-width: 600px) {
+ .badge{
+
+}
+
+}
