@@ -68,6 +68,13 @@ const Header: React.FC<Props> = ({ goToLabel }) => {
               >
                 Monetization
               </button>
+
+               <button
+                onClick={() => goToLabel("how-it-works")}
+                className="cursor-pointer text-right font-mono text-lg whitespace-nowrap uppercase transition duration-300 hover:text-red-500 hover:drop-shadow-[0_0_10px_red]"
+              >
+                How it works
+              </button>
              
               <Link
                 href="/#contact"
@@ -117,6 +124,16 @@ const Header: React.FC<Props> = ({ goToLabel }) => {
         >
           Monetization
         </button>
+        <button
+          onClick={() => {
+            setActive(false);
+            goToLabel("how-it-works");
+          }}
+          className="text-bold cursor-pointer text-left text-lg uppercase"
+        >
+          How it works
+        </button>
+        
         <Link
           onClick={() => setActive(false)}
           href="/#contact"

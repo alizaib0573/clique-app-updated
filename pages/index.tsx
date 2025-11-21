@@ -113,6 +113,7 @@ export default function Home({
             .to(".heading-4", { x: "-20%", opacity: 0 }, "<")
             .to(".content-4", { x: "-20%", opacity: 0 }, "<")
             .to(".heading-5", { x: "0%", opacity: 1 }, "<0.4")
+            .addLabel("how-it-works")
             .to(".content-5", { x: "0%", opacity: 1, stagger: 0.2 }, "<0.2");
         },
       );
@@ -216,8 +217,8 @@ export default function Home({
               },
             ]}
           />
-          {/* <Intro
-            index={4}
+          <Intro
+            index={5}
             heading="How it works"
             content={[
               {
@@ -227,7 +228,7 @@ export default function Home({
               },
             ]}
             direction="right"
-          /> */}
+          />
           {/* <Intro
             index={5}
             heading="Create content"
