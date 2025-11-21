@@ -228,7 +228,7 @@ export default function Home({
             ]}
             direction="right"
           /> */}
-          <Intro
+          {/* <Intro
             index={5}
             heading="Create content"
             content={[
@@ -243,7 +243,7 @@ export default function Home({
               },
             ]}
             direction="right"
-          />
+          /> */}
         </div>
         <Form />
       </section>
