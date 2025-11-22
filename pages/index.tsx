@@ -49,6 +49,7 @@ export default function Home({
               },
             })
             .to(text, { opacity: 0 })
+
             .to(
               mobile.position,
               { x: isMobile ? 0 : 3, y: isMobile ? 1 : 0 },
@@ -86,10 +87,10 @@ export default function Home({
             .to(".desc-2", { x: "0%", opacity: 1 }, "<0.2")
             .to(".content-2", { x: "0%", opacity: 1, stagger: 0.2 }, "<0.2")
             .addLabel("monetization")
-            .to(mobile.position, { x: isMobile ? 0 : 4 })
+            .to(mobile.position, { x: isMobile ? 0 : 0 })
             .to(
               mobile.rotation,
-              { x: Math.PI * 0, y: Math.PI * 1, z: Math.PI * 0 },
+              { x: Math.PI * 0, y: Math.PI * 2, z: Math.PI * 0 },
               "<",
             )
             .to(".heading-2", { x: "-20%", opacity: 0 }, "<")
@@ -98,23 +99,23 @@ export default function Home({
             .to(".heading-3", { x: "0%", opacity: 1 }, "<0.4")
             .to(".content-3", { x: "0%", opacity: 1, stagger: 0.2 }, "<0.2")
             .addLabel("your-app")
-            .to(mobile.position, { x: isMobile ? 0 : -4 })
-            .to(
-              mobile.rotation,
-              { x: Math.PI * 0, y: -Math.PI * 1, z: Math.PI * 0 },
-              "<",
-            )
-            .to(".heading-3", { x: "-20%", opacity: 0 }, "<")
-            .to(".content-3", { x: "-20%", opacity: 0 }, "<")
-            .to(".heading-4", { x: "0%", opacity: 1 }, "<0.4")
-            .to(".content-4", { x: "0%", opacity: 1, stagger: 0.2 }, "<0.2")
-            .to(mobile.position, { x: isMobile ? 0 : 0 })
-            .to(mobile.rotation, { x: Math.PI * 2, y: 0, z: 0 }, "<")
-            .to(".heading-4", { x: "-20%", opacity: 0 }, "<")
-            .to(".content-4", { x: "-20%", opacity: 0 }, "<")
-            .to(".heading-5", { x: "0%", opacity: 1 }, "<0.4")
-            .addLabel("how-it-works")
-            .to(".content-5", { x: "0%", opacity: 1, stagger: 0.2 }, "<0.2");
+            // .to(mobile.position, { x: isMobile ? 0 : -4 })
+            // .to(
+            //   mobile.rotation,
+            //   { x: Math.PI * 0, y: -Math.PI * 1, z: Math.PI * 0 },
+            //   "<",
+            // )
+            // .to(".heading-3", { x: "-20%", opacity: 0 }, "<")
+            // .to(".content-3", { x: "-20%", opacity: 0 }, "<")
+            // .to(".heading-4", { x: "0%", opacity: 1 }, "<0.4")
+            // .to(".content-4", { x: "0%", opacity: 1, stagger: 0.2 }, "<0.2")
+            // .to(mobile.position, { x: isMobile ? 0 : 0 })
+            // .to(mobile.rotation, { x: Math.PI * 2, y: 0, z: 0 }, "<")
+            // .to(".heading-4", { x: "-20%", opacity: 0 }, "<")
+            // .to(".content-4", { x: "-20%", opacity: 0 }, "<")
+            // .to(".heading-5", { x: "0%", opacity: 1 }, "<0.4")
+            // .addLabel("how-it-works")
+            // .to(".content-5", { x: "0%", opacity: 1, stagger: 0.2 }, "<0.2");
         },
       );
     },
@@ -153,7 +154,7 @@ export default function Home({
           <Intro
             index={1}
             heading="Direct to fan"
-            description="Fans download YOUR  app, not another social media or “tech platform”"
+            description="Fans download YOUR  app, Not another social media or “Tech Platform-”"
             content={[]}
           />
          
@@ -170,12 +171,12 @@ export default function Home({
               {
                 heading: "4K Streaming Events",
                 description:
-                  "Live shows, studio sessions, listening parties, and more.",
+                  "Live shows, Studio sessions, Listening parties and more.",
               },
               {
                 heading: "Go Live",
                 description:
-                  "Behind the scenes, Q&A, work life, and personal life.",
+                  "Behind the scenes, Q&A, Work life and personal life.",
               },
               {
                 heading: "Presale & DM’s",
@@ -185,7 +186,7 @@ export default function Home({
               {
                 heading: "Analytics Dashboard",
                 description:
-                  "Metrics derived from engagement, frequency, and monetization of content, subscribers, and events.",
+                  "Metrics derived from engagement, Frequency and monetization of Content, Subscribers and events.",
               },
             ]}
           />
@@ -193,31 +194,31 @@ export default function Home({
             index={3}
             direction="left"
             heading="MONETIZATION"
-            description="Engage with Your fans in your own private community"
+            description="Engage with Your fans in your own private community."
             content={[
               {
                 heading: "Integrated Event Ticketing",
                 description:
-                  "Create endless VIP experiences for your top fans through our turnkey ticketing suite",
+                  "Create endless VIP experiences for your top fans through our turnkey ticketing suite.",
               },
               {
                 heading: "Subscriptions",
                 description:
-                  "Provide un-filtered access and exclusive experience for your biggest fans with monthly or annual subscriptions.",
+                  "Provide unfiltered access and exclusive experience for your biggest fans with monthly or annual subscriptions.",
               },
               {
                 heading: "Premium Content",
                 description:
-                  "Sell virtual classes, lessons, trainings, live performances, and more",
+                  "Sell virtual classes, Lessons, Trainings, Live performances and more.",
               },
               {
                 heading: "Store/Merch",
                 description:
-                  "Most exclusive “you” items for your fans as well as tickets for in-person events or streaming shows.",
+                  "Most exclusive “You” items for your fans as well as tickets for in-person events or streaming shows.",
               },
             ]}
           />
-          <Intro
+          {/* <Intro
             index={5}
             heading="How it works"
             content={[
@@ -228,7 +229,7 @@ export default function Home({
               },
             ]}
             direction="right"
-          />
+          /> */}
           {/* <Intro
             index={5}
             heading="Create content"

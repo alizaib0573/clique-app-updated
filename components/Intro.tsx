@@ -33,7 +33,7 @@ const Intro: React.FC<Props> = ({
         {description && (
           <p
             data-center={direction === "center"}
-            className={`desc-${index} mt-5 mb-2.5 -translate-x-[20%] text-center text-sm opacity-0 data-[center='true']:translate-x-0 data-[center='true']:-translate-y-[20%] data-[center='true']:text-center md:text-left md:text-base`}
+            className={`desc-${index} mt-5 mb-2.5 -translate-x-[20%] text-center text-sm opacity-0 data-[center='true']:translate-x-0 data-[center='true']:-translate-y-[20%] data-[center='true']:text-center md:text-left md:text-base sm:max-w-[500px] `}
           >
             {description}
           </p>
@@ -51,7 +51,7 @@ const Intro: React.FC<Props> = ({
                 {elem.heading}
               </h2>
               <p
-                className={`mb-2.5 text-center text-sm md:text-left md:text-base`}
+                className={`mb-2.5 text-center text-sm md:text-left md:text-base sm:max-w-[450px]`}
               >
                 {elem.description}
               </p>
