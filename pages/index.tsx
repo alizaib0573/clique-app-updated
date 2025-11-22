@@ -154,7 +154,7 @@ export default function Home({
           <Intro
             index={1}
             heading="Direct to fan"
-            description="Fans download YOUR  app, Not another social media or “Tech Platform-”"
+            description="Fans download YOUR  app, Not another social media or “Tech Platform”"
             content={[]}
           />
          
@@ -214,7 +214,7 @@ export default function Home({
               {
                 heading: "Store/Merch",
                 description:
-                  "Most exclusive “You” items for your fans as well as tickets for in-person events or streaming shows.",
+                  "Most exclusive “YOU” items for your fans as well as tickets for in-person events or streaming shows.",
               },
             ]}
           />
